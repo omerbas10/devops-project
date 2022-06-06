@@ -1,36 +1,37 @@
-<HTML>     
-    <HEAD>     
-    <TITLE>Form Example</TITLE>     
-    </HEAD>     
-    <BODY BGCOLOR="#ffffcc">     
-    <% if (request.getParameter("name")==
-    null && request.getParameter("email")
-     == null) { %>     
-    <CENTER>     
-    <H2>User Info Request Form</H2>     
-    <FORM METHOD="GET" ACTION="/developer/technicalArticles/xml/WebAppDev/process.jsp">     
-    <P>     
-    Your name: <input type="text" name=
-    "name" size=26>     
-    <P>     
-    Your email: <input type="text" name=
-    "email" size=26>     
-    <P>     
-    <input type="submit" value="Process">     
-    </FORM>     
-    </CENTER>     
-    <% } else { %>     
-    <%! String name, email; %>     
-    <%     
-    name = request.getParameter("name");     
-    email = request.getParameter("email");     
-    %>     
-    <P>     
-    <B>You have provided the following 
-    info</B>:     
-    <P>     
-    <B>Name</B>: <%= name %><P>     
-    <B>Email</B>: <%= email %>     
-    <% } %>     
-    </BODY>     
-    </HTML>
+<html>
+
+<head>
+    <title>JSP Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
+        body {
+            background-color: rgb(27, 24, 199);
+            color: white;
+            font-family: 'Assistant', sans-serif;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Date & Time</h1>
+        <h2>
+            <% java.util.Date today=new java.util.Date(); out.println("Today's date is: "+today);
+            %>
+        </h2>
+        <h3>WOW! ziv is watching omg</h3>
+    </main>
+</body>
+
+</html>
