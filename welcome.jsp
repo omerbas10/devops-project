@@ -6,7 +6,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
 
         body {
-            background-color: rgb(199, 123, 24);
+            background-color: rgb(241, 4, 146);
             color: white;
             font-family: 'Assistant', sans-serif;
         }
