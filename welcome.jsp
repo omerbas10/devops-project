@@ -30,7 +30,7 @@
             <% java.util.Date today=new java.util.Date(); out.println("Today's date is: "+today);
             %>
         </h2>
-        <h3 >Mal is the queen!</h3>
+        <h3 >Mal is the queen</h3>
     </main>
 </body>
 
